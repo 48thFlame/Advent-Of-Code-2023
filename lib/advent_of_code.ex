@@ -3,16 +3,7 @@ defmodule AdventOfCode do
   Documentation for `AdventOfCode`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> AdventOfCode.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def get_input(day) when is_number(day) do
+    File.read!("input/day#{day}input.txt")
   end
 end
